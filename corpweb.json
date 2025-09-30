@@ -6,10 +6,6 @@
     "KeyPair": {
       "Description": "KeyPair",
       "Type": "AWS::EC2::KeyPair::KeyName"
-    },
-    "YourIp": {
-      "Description": "24.118.224.253/32",
-      "Type": "String"
     }
   },
 
@@ -99,7 +95,7 @@
             "IpProtocol": "tcp",
             "FromPort": 22,
             "ToPort": 22,
-            "CidrIp": { "Ref": "24.118.224.253/32" }
+            "CidrIp": "24.118.224.253/32"
           },
           {
             "IpProtocol": "tcp",
